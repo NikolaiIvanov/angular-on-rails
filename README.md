@@ -15,4 +15,5 @@ rake db:create
 
 # Create PostgreSQL user
 # [It's a good practice => brand-new user for each new project]
+# In case using Travis CI, you have to use user 'postgres' for test DB
 createuser -P -s -e angular_on_rails

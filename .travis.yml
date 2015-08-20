@@ -11,9 +11,11 @@ cache: bundler
 addons:
   postgresql: 9.4
 
+
+
 before_script:
   - export CODECLIMATE_REPO_TOKEN=5708668aaa6048cb84c5b2c361a7c10907bdbc9cc8881338bf6936de14ff92c0 bundle exec rake
-  - psql -c 'create database angular_on_rails_test;' -U angular_on_rails
+  - psql -c 'create database angular_on_rails_test;' -U postgres
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
   - "echo 'gem: --no-ri --no-rdoc' > ~/.gemrc"
