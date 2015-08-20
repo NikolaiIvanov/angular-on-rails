@@ -15,6 +15,7 @@ group :development do
 end
 
 group :test, :development do
+  gem "codeclimate-test-reporter", require: nil
   gem 'rspec-rails', '~> 3.0'
   gem 'factory_girl_rails'
   gem 'pry'
