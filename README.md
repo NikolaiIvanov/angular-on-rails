@@ -19,3 +19,14 @@ rake db:create
 # [It's a good practice => brand-new user for each new project]
 # In case using Travis CI, you have to use user 'postgres' for test DB
 createuser -P -s -e angular_on_rails
+
+# Angular client is stored in the client folder inside angular-on-rails folder
+# For running API and Client both, you have to enter to the client folder
+cd client
+
+# Then you have to run Gulp task
+gulp serve:client-server
+
+# Client  begin to work on http://localhost:4000/#/
+# And Rails API on http://localhost:3000/
+# Client have proxy to API on URL http://localhost:4000/API/
