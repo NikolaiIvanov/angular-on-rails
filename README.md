@@ -7,7 +7,7 @@ Simple AngularJS research App
 
 ```bash
 # Clone app first of all:
-git clone https://github.com/NikolaiIvanov/angular_on_rails.git
+git clone https://github.com/NikolaiIvanov/angular-on-rails.git
 
 # Setup App bundle:
 bundle install

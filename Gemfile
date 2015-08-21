@@ -13,9 +13,10 @@ group :development do
   gem 'annotate'
 end
 
+gem "codeclimate-test-reporter", group: :test, require: nil
+
 group :test, :development do
   gem 'spring'
-  gem 'codeclimate-test-reporter', require: nil
   gem 'rspec-rails', '~> 3.0'
   gem 'factory_girl_rails'
   gem 'pry'
