@@ -37,7 +37,7 @@ module AngularOnRails
             fixtures: true,
             view_specs: false,
             helper_specs: false,
-            routing_specs: true,
+            routing_specs: false,
             request_specs: true,
             controller_specs: true
     end

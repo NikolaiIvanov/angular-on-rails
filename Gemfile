@@ -7,7 +7,6 @@ gem 'rails-api'
 gem 'pg'
 
 group :development do
-  gem 'spring'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'foreman'
@@ -15,7 +14,8 @@ group :development do
 end
 
 group :test, :development do
-  gem "codeclimate-test-reporter", require: nil
+  gem 'spring'
+  gem 'codeclimate-test-reporter', require: nil
   gem 'rspec-rails', '~> 3.0'
   gem 'factory_girl_rails'
   gem 'pry'
